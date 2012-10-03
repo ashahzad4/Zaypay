@@ -1,8 +1,4 @@
-h1, h2, h3, h4 {
-    color: #111111;
-    font-weight: 400;
-}
-
+<p style="color:red">asdas as d</p>
 <p align="center">
 
 <img width="200px"src="http://zaypay.com/images/v2/logo.png"/>

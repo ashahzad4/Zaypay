@@ -26,8 +26,18 @@ Each Price Setting has ID and API-KEY. API-KEY should only be known to you. You 
 
 {
   default: ID,
-	ID : "API-KEY"
+  ID : "API-KEY"
 }
 ```
 
+This is a sample zaypay.json file:
+
+``` ruby
+{
+  default: 123456,
+  123456: "4c60870f5906a9b16507a62e96f086aa",
+  112211: "1121110f5906a9b16507a62e96fass11"
+}
+
+```
 

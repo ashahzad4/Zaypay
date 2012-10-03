@@ -1,6 +1,6 @@
 <p align="center">
 
-<img style="width: 100px;" src="http://zaypay.com/images/v2/logo.png"/>
+<img width="200px"src="http://zaypay.com/images/v2/logo.png"/>
 
 </p>
 

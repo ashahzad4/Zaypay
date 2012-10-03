@@ -45,3 +45,8 @@ Or, if you prefer, __use two underscores instead__.
 
 *   Another item in the list.
 
+
+I start my morning with a cup of coffee and
+[The New York Times][NY Times].
+
+[ny times]: http://www.nytimes.com/

@@ -33,10 +33,10 @@ Or, if you prefer, __use two underscores instead__.
 3.  Blue
 
 
+I strongly recommend against using any `<blink>` tags.
 
-[1]: http://google.com/        "Google"
-[2]: http://search.yahoo.com/  "Yahoo Search"
-[3]: http://search.msn.com/    "MSN Search"
+I wish SmartyPants used named entities like `&mdash;`
+instead of decimal-encoded entites like `&#8212;`.
 
 
 *   A list item.

@@ -60,4 +60,8 @@ I start my morning with a cup of coffee and
 
  <blockquote>
     <p>For example.</p>
+     // this is a block of code
+    PriceSetting ps = new PriceSeting();
+    
+    String status = ps.status();
 </blockquote>

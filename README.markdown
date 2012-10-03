@@ -17,5 +17,17 @@ Price Settings offer following modes:
 *   Easy
 *   Full Control
 
+Super Easy and Easy modes allow you to set a price to aim at but this price can be overidden dynamically through the API (and as such, through this plugin). In Full Controll, everything can be configured.
+
+
+Each Price Setting has ID and API-KEY. API-KEY should only be known to you. You will have to create Zaypay.json file in App_Data directory of your project. It should look something like this:
+
+``` ruby
+
+{
+  default: ID,
+	ID : "API-KEY"
+}
+```
 
 

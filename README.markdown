@@ -33,7 +33,9 @@ Or, if you prefer, __use two underscores instead__.
 3.  Blue
 
 
-I strongly recommend against using any `<blink>` tags.
+I strongly recommend against using any 
+
+`price setting id  = new prie setting ind tring status = ps.locelae()`
 
 I wish SmartyPants used named entities like `&mdash;`
 instead of decimal-encoded entites like `&#8212;`.

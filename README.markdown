@@ -42,4 +42,7 @@ Or, if you prefer, __use two underscores instead__.
 
 *   Another item in the list.
 
-This is an [example link](http://example.com/).
+
+[1]: http://google.com/        "Google"
+[2]: http://search.yahoo.com/  "Yahoo Search"
+[3]: http://search.msn.com/    "MSN Search"

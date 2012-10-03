@@ -35,7 +35,11 @@ Or, if you prefer, __use two underscores instead__.
 
 I strongly recommend against using any 
 
-`price setting id  = new prie setting ind tring status = ps.locelae()`
+    // this is a block of code
+    PriceSetting ps = new PriceSeting();
+    
+    String status = ps.status();
+    
 
 I wish SmartyPants used named entities like `&mdash;`
 instead of decimal-encoded entites like `&#8212;`.

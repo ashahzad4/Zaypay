@@ -18,16 +18,16 @@ You can create a price setting by clicking the price setting  link on your dashb
 
 Price Settings offer following modes:
 
-*   __Super Easy__
+*   Super Easy
 *   Easy
 *   Full Control
 
 Super Easy and Easy modes allow you to set a price to aim at but this price can be overidden dynamically through the API (and as such, through this plugin). In Full Controll, everything can be configured.
 
 
-Each Price Setting has ID and API-KEY. API-KEY should only be known to you. You will have to create Zaypay.json file in App_Data directory of your project. It should look something like this:
+Each Price Setting is identified by an  __ID__ and __API-KEY__. *API-KEY* should only be known to you. In order to map ID with API-KEY, you will have to create __Zaypay.json__ file in *App_Data* directory of your project. It should look something like this:
 
-``` ruby
+``` csharp
 
 {
   default: ID,
@@ -35,7 +35,7 @@ Each Price Setting has ID and API-KEY. API-KEY should only be known to you. You 
 }
 ```
 
-This is a sample zaypay.json file:
+This is a sample Zaypay.json file:
 
 ``` ruby
 {

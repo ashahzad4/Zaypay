@@ -98,8 +98,8 @@ __Example:__
 
 LocaleForIPResponse response = ps.LocaleForIP("82.94.123.123");
 string locale = response.Locale();
-```
-
+```  
+<br/>
 ### ListLocales(int amount = 0)
 
 You have configured all countries that your price setting will support, but you need some easy way to show all supported countries to your customer. The price setting object can list its supported locales by calling this method.
@@ -155,9 +155,8 @@ Below is a small description of the methods used above.
      	"english-name" => "English"
   }
   ```
-
 If you use dynamic amounts, specify the 'amount' in ListLocales(int amount) and only the countries will be shown that can support that amount.
-
+<br/><br/>
 
 ### ListPaymentMethods(int amount = 0)
 
@@ -201,6 +200,10 @@ Each __payment method hash__ contains the following key-value pairs :
   "payout"                              =>  0.54,
 }
 ```
+
+You can extract any key-value pair from the payment hashtable.
+
+<br/>
 
 ### CreatePayment( NameValueCollection options = null )
 
@@ -319,6 +322,7 @@ int paymentMethodId = response.PaymentMethodId()
 // get the whole payment object
 Hashtable payment = response.Payment();
 ```
+<br/>
 
 ### ShowPayment(int paymentID)
 
@@ -335,7 +339,7 @@ PaymentResponse response = ps.ShowPayment(123455);
 // get status of the payment
 string status = response.Status();
 ```
-
+<br/>
 ### VerificationCode(int paymentID, string code)
 
 In some countries (like USA) we send your customer a __verification code__ in the final (premium) message. Payments that require verification code comes with __VerificationNeeded__ flag set to TRUE.
@@ -354,7 +358,7 @@ string status = response.Status();
 // you can check the tries left if code was not correct and you need to ask the customer againg to enter the code
 int triesLeft = ps.VerificationTriesLeft();
 ```
-
+<br/>
 ### MarkPayloadProvided(int paymentID)
 
 When a payment is made, the desired product must be delivered to the customer. You can use zaypay to *register the status of product delivery*. This way you can conveniently decide whether a customer is trying to get a free ride without having to keep track of all payments in your own database. You get a __"payload-provided"__ that you get in every __payment-hash__.

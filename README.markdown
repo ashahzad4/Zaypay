@@ -18,7 +18,7 @@ You can create a price setting by clicking the price setting  link on your dashb
 
 Price Settings offer following modes:
 
-*   Super Easy
+*   __Super Easy__
 *   Easy
 *   Full Control
 

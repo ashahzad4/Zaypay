@@ -5,11 +5,15 @@
 
 ZAYPAY api for .NET users
 ------------------------------
+This api is for .net users who want to interact with zaypay for creating and tracking their payments. 
+
+You can download the api at link
 
 Price Setting
 ------------------------------
 
-Zaypay API works with so-called Price Settings. There are items you can create by clicking Price Settings link on your dashboard  ( at http://zaypay.com ), that defines what payment methods and countries you want to support, and what prices you would allow. 
+Zaypay API works with Price Settings. A price setting determines how and in what countries payments can be made and how much a consumer needs to pay to complete the payment. 
+You can create a price setting by clicking the price setting  link on your dashboard  ( at http://zaypay.com ).
 
 Price Settings offer following modes:
 

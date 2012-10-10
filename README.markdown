@@ -223,7 +223,7 @@ ps.paymentMethodID = 2; // ( 2 is the payment method for sms)
 
 Please note that it is __mandatory__ to set *locale* and *paymentMethodID* before calling *CreatePayment* method.
 
-You can fill in the options NameValueCollection if you want to send some custom variables as well.
+You can provide *CreatePayment* with __options__. You might want to send some custom variables.
 
 ``` csharp
 

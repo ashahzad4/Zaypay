@@ -13,7 +13,7 @@ Price Setting
 ------------------------------
 
 Zaypay API works with __Price Settings__. A *price setting* determines how and in which countries payments 
-can be made and by how much a consumer needs to pay inorder to complete the payment. 
+can be made and by how much a consumer needs to pay in order to complete the payment. 
 You can create a price setting by clicking the price setting  link on your dashboard  ( at http://zaypay.com ).
 
 Price Settings offer following modes:

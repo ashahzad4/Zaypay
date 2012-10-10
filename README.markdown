@@ -41,7 +41,7 @@ Each Price Setting is identified by an  __ID__ and __API-KEY__. *API-KEY* should
 ```
 
 Where __ID__ is the *price setting ID*, and __API-KEY__ is the *price setting api-key*.
-This is a sample zaypay.json file:
+This is a sample Zaypay.json file:
 
 ``` csharp
 {

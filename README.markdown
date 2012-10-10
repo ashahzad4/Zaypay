@@ -5,7 +5,7 @@
 
 ZAYPAY api for .NET users
 ------------------------------
-This api is for .net users who want to interact with zaypay for creating and tracking their payments. 
+This api is for .net users who want to use zaypay for creating and tracking their payments. 
 
 You can download the api at link
 
@@ -18,15 +18,15 @@ You can create a price setting by clicking the price setting  link on your dashb
 
 Price Settings offer following modes:
 
-* Super Easy
+* __Super Easy__
   
   You have the facility of choosing a price you want along with price margin. For example, you can use this payment method to charge € 1,10, if you set the price at € 1, and the margin to 10% you allow us to increase the amount charged to make that payment possible. This way you can get better coverage while still controlling things as tightly as you wish. The engine will always try to get the price right primarily, but will increase to margin if needed.
 
-* Easy
+* __Easy__
   
   You get more control over either countries or payment methods. This means you can tell a Price Setting "I only want to support payments by phone" or "I only accept payments from customers in Germany and Belgium". 
 
-* Full Control
+* __Full Control__
   
   You can control every country and within that country every payment method. You're allowed to set prices per payment method per country, which really gives you full control.
 

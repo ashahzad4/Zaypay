@@ -141,7 +141,7 @@ Below is a small description of the methods used above.
   
   {
       "name" => "Netherlands",
-     	"code" => "NL"
+      "code" => "NL"
   }
   ```
   
@@ -156,8 +156,8 @@ Below is a small description of the methods used above.
 
   {
       "code" => "en",
-     	"native-name" => "English",
-     	"english-name" => "English"
+      "native-name" => "English",
+      "english-name" => "English"
   }
   ```
 If you use dynamic amounts, specify the 'amount' in ListLocales(int amount) and only the countries will be shown that can support that amount.

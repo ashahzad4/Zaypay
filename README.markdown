@@ -19,12 +19,15 @@ You can create a price setting by clicking the price setting  link on your dashb
 Price Settings offer following modes:
 
 * Super Easy
+  
   You have the facility of choosing a price you want along with price margin. For example, you can use this payment method to charge € 1,10, if you set the price at € 1, and the margin to 10% you allow us to increase the amount charged to make that payment possible. This way you can get better coverage while still controlling things as tightly as you wish. The engine will always try to get the price right primarily, but will increase to margin if needed.
 
 * Easy
+  
   You get more control over either countries or payment methods. This means you can tell a Price Setting "I only want to support payments by phone" or "I only accept payments from customers in Germany and Belgium". 
 
 * Full Control
+  
   You can control every country and within that country every payment method. You're allowed to set prices per payment method per country, which really gives you full control.
 
 Each Price Setting is identified by an  __ID__ and __API-KEY__. *API-KEY* should only be known to you. In order to map *ID* with *API-KEY*, you will have to create __Zaypay.json__ file in *App_Data* directory of your project. It should look something like this:

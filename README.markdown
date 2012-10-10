@@ -12,8 +12,8 @@ You can download the api at link
 Price Setting
 ------------------------------
 
-Zaypay API works with __Price Settings__. A *price setting* determines how and in what countries payments 
-can be made and how much a consumer needs to pay to complete the payment. 
+Zaypay API works with __Price Settings__. A *price setting* determines how and in which countries payments 
+can be made and by how much a consumer needs to pay inorder to complete the payment. 
 You can create a price setting by clicking the price setting  link on your dashboard  ( at http://zaypay.com ).
 
 Price Settings offer following modes:
@@ -51,7 +51,7 @@ This is a sample zaypay.json file:
 Price Setting Object:
 --------------------------------------
 
-The api comes with __Zaypay.PriceSetting__ class that will provide all access to zaypay platform. We will demonstrate how easy this works by showing some examples.
+The api comes with __Zaypay.PriceSetting__ class that will provide access to zaypay platform. We will demonstrate how easy this works through some examples.
 
 You can create a price setting object using the price setting ID with the following code:
 
@@ -88,7 +88,7 @@ Here is a list of methods that are supported by Price Setting class.
 
 ### LocaleForIP(string ip)
 
-You would probably want to know customers location so you can provide them with a preselected *country* and *language*. *LocaleForIP* method will contact zaypay to figure out the country and language of the provided *IP*.
+You would probably want to know customers location, so that you can provide them with a preselected *country* and *language*. *LocaleForIP* method will contact zaypay to figure out the country and language of the provided *IP*.
 
 Call to LocaleForIP will return a __LocaleForIPResponse__ object. You can call __Locale()__ method on the object to get the language-country (e.g “nl-NL”)  locale as a string.
 
@@ -102,7 +102,7 @@ string locale = response.Locale();
 <br/>
 ### ListLocales(int amount = 0)
 
-You have configured all countries that your price setting will support, but you need some easy way to show all supported countries to your customer. The price setting object can list its supported locales by calling this method.
+Once you have configured out all countries that your price setting will support, you need an easy way to show all supported countries to your customer. The price setting object can list its supported locales by calling this method.
 
 Call to *ListLocales(int amount = 0)* will return __ListLocalesResponse__ object.
 
@@ -207,7 +207,7 @@ You can extract any key-value pair from the payment hashtable.
 
 ### CreatePayment( NameValueCollection options = null )
 
-So far we know where the customer is located, and what payment method is desired. Let us set these two values on our price setting object:
+So far the customer's location and desired payment method is known. Let us set these two values on our price setting object:
 
 ``` csharp
 //example
@@ -218,7 +218,7 @@ ps.paymentMethodID = 2; // ( 2 is the payment method for sms)
 
 Please note that it is __mandatory__ to set *locale* and *paymentMethodID* before calling *CreatePayment* method.
 
-You can fill in the options NameValueCollection if you want to send along some custom variables.
+You can fill in the options NameValueCollection if you want to send some custom variables as well.
 
 ``` csharp
 
@@ -342,7 +342,7 @@ string status = response.Status();
 <br/>
 ### VerificationCode(int paymentID, string code)
 
-In some countries (like USA) we send your customer a __verification code__ in the final (premium) message. Payments that require verification code comes with __VerificationNeeded__ flag set to TRUE.
+In some countries (like USA) we send your customer a __verification code__ in the final (premium) message. Payments that require verification code come with __VerificationNeeded__ flag set to TRUE.
 
 For such payments, you have to present the customer with a form for entering the __verification code__. When you receive the code from the customer, you can make call to Zaypay through __VerificationCode(int paymentID, string code)__ method. This method returns with __PaymentResponse__ object, and if correct code was entered by the user, you will get a response object with payment status of "paid". Your customer has __3 attempts__ to enter the verification code.
 
@@ -361,7 +361,7 @@ int triesLeft = ps.VerificationTriesLeft();
 <br/>
 ### MarkPayloadProvided(int paymentID)
 
-When a payment is made, the desired product must be delivered to the customer. You can use zaypay to *register the status of product delivery*. This way you can conveniently decide whether a customer is trying to get a free ride without having to keep track of all payments in your own database. You get a __"payload-provided"__ that you get in every __payment-hash__.
+When a payment is made, the desired product must be delivered to the customer. You can use zaypay to *register the status of product delivery*. This way you can track if a customer is misusing the system without having to keep track of all payments in your own database. You get a __"payload-provided"__ that you get in every __payment-hash__.
 
 Calling *MarkPayloadProvided(int paymentID)* method returns the same __PaymentResponse__ object.
 

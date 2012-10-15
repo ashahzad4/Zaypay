@@ -7,12 +7,12 @@
 Doc for Demo App:
 ---------------------------
 
-You have to make sure that your application is accessible from internet. This is important, because Zaypay sends report of your payments to the url you gave when creating your price settings and payalogues at Zaypay.com
+You have to make sure that your application is accessible from internet. This is important, because Zaypay sends report of your payments to the reporting url you gave when creating your price settings and payalogues at Zaypay.com
 
 If you have a public ip address, you have to make sure that your windows server and iis express allows external connections to your application on a specific port.
 
 
-Please follow the steps if your application cannot be accessed over the internet:
+Please follow these steps if your application cannot be accessed over the internet:
 
 
 1. First, you need to tell HTTP.SYS at the kernel level that it's OK to let everyone talk to this URL by making an "Url Reservation." 

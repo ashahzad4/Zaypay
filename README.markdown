@@ -6,7 +6,21 @@
 Zaypay Plugin for .NET
 ------------------------------
 This plugin allows your .NET application to create and track payments on the Zaypay platform.
-For more information about Zaypay, please visit http://www.zaypay.com and http://www.zaypay.com/developers.
+For more information about Zaypay, please visit   http://www.zaypay.com  and   http://www.zaypay.com/developers.
+
+You can download only dll file or the whole Zaypay project.
+
+If you download the project, you can find the Dll of this plugin at __Zaypay/bin/Release/Zaypay.dll__
+
+You have to add __Zaypay.dll__ to references section of your project.
+
+Once you have added Zaypay.dll , you can access it by adding the following lines of code.
+
+``` csharp
+using Zaypay;
+using Zaypay.WebService;
+```
+
 
 Price Setting
 ------------------------------
@@ -378,4 +392,4 @@ __Example:__
 PaymentResponse response = ps.MarkPayloadProvided(12355);
  
 bool payaloadProvided = response.PayaloadProvided();
-```￧￿￿￿￿ꢢﾵ瑤ﾞ￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￸���￨￳￩￱￥￵￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿���￨￴￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￿￩￬￪
+```
